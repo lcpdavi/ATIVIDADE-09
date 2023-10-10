@@ -1,24 +1,23 @@
 #include <stdio.h>
 
 int main(){
-  float vetor[10];
+  float vetor[6];
   int numerosNegativos = 0; 
-  float numerosPositivos = 0;
+  float somaNumerosPositivos = 0;
 
-  for(int i = 0; i < 10; i++){
+  for(int i = 0; i < 6; i++){
     printf("Insira numero real:\n");
     scanf("%f", &vetor[i]);
-
     
     if(vetor[i] < 0){
-          numerosNegativos++; 
+        numerosNegativos++; 
     }
     else{
-      numerosPositivos += vetor[i];
+      somaNumerosPositivos += vetor[i];
       }
   }
 
   printf("Quantidade de numeros negativos: %d", numerosNegativos);
-  printf("\nSoma numeros positivos: %.2f", numerosPositivos);
+  printf("\nSoma numeros positivos: %.2f", somaNumerosPositivos);
 
 }
