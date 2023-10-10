@@ -8,8 +8,7 @@ int main() {
   for (int i = 0; i < 5; i++) {
     printf("Insira o numero:\n");
     scanf("%d", &vetor[i]);
-    soma += vetor[i]; // Adicionar o valor atual à soma
-
+    soma += vetor[i];
     if (i == 0) {
       maiorValor = vetor[i];
       menorValor = vetor[i];
