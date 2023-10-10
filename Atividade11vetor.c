@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 int main(){
-  float vetor[6];
+  float vetor[10];
   int numerosNegativos = 0; 
   float numerosPositivos = 0;
 
-  for(int i = 0; i < 6; i++){
+  for(int i = 0; i < 10; i++){
     printf("Insira numero real:\n");
     scanf("%f", &vetor[i]);
 
